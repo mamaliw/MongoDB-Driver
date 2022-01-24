@@ -1,15 +1,20 @@
-require('dotenv').config()
-require('./util/winston')
-const express = require('express')
-const mongodb = require('mongodb')
-const requset = require('request')
+(async () => {
+        require('dotenv').config()
+        require('./util/winston')
+        const express = require('express')
+        global.DB = await (new (require('./util/database'))).get()
+        //-----------------------------
+        const flightService = require('./services/flight')
+        //-----------------------------
+        const app = express()
+        app.use(express.json())
+        app.use(express.static('public'))
+            app.use(require('./router/flight'))
+        app.set('view engine', 'ejs');
+        app.listen(parseInt(process.env.SERVER_PORT), () => log.info(`Express Server Is Listening On Port: ${process.env.SERVER_PORT}`))
+        //--------------------
 
 
-let main = async () => {
-    const DB =await( new (require('./util/database'))).get()
-    await DB.collection('test').insertOne({Text: 'HelloWorld'})
 
-    log.debug('hi')
-}
-main()
-
+    }
+)()

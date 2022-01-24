@@ -30,11 +30,11 @@ const myCustomLevels = {
     },
 };
 global.log = winston.createLogger({
-    format: winston.format.json(),
+    format: combine(
+        timestamp(),
+        prettyPrint()
+    ),
     levels: myCustomLevels.levels,
-    prettyPrint(object) {
-        return JSON.stringify(object);
-    },
     transports: [
         new winston.transports.DailyRotateFile({
             filename: path.join('log', `/%DATE%.log`),
