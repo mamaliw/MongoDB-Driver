@@ -9,12 +9,10 @@
         const app = express()
         app.use(express.json())
         app.use(express.static('public'))
-            app.use(require('./router/flight'))
+        app.use(express.urlencoded({extended: false}));
+        app.use(require('./router/flight'))
         app.set('view engine', 'ejs');
         app.listen(parseInt(process.env.SERVER_PORT), () => log.info(`Express Server Is Listening On Port: ${process.env.SERVER_PORT}`))
         //--------------------
-
-
-
     }
 )()

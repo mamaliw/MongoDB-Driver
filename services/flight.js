@@ -4,6 +4,7 @@ module.exports = {
 
     async save(data){
         try {
+            data.departureDate = new Date(data.departureDate)
             return await collection.insertOne(data)
         }catch (e) {
             log.error(e.status)
@@ -12,6 +13,13 @@ module.exports = {
     async get(filter){
         try {
             return await collection.find(filter).toArray()
+        }catch (e) {
+            log.error(e.status)
+        }
+    },
+    async aggregate(query){
+        try {
+            return await collection.aggregate(query).toArray()
         }catch (e) {
             log.error(e.status)
         }
