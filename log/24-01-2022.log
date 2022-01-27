@@ -1,0 +1,1141 @@
+{
+  message: 'Express Server Is Listening On Port: 80',
+  level: 'info',
+  timestamp: '2022-01-24T09:31:39.991Z'
+}
+{
+  message: 'Express Server Is Listening On Port: 80',
+  level: 'info',
+  timestamp: '2022-01-24T09:32:15.565Z'
+}
+{
+  message: 'Express Server Is Listening On Port: 80',
+  level: 'info',
+  timestamp: '2022-01-24T09:47:28.718Z'
+}
+{
+  message: 'Express Server Is Listening On Port: 80',
+  level: 'info',
+  timestamp: '2022-01-24T09:48:50.396Z'
+}
+{
+  message: 'Express Server Is Listening On Port: 80',
+  level: 'info',
+  timestamp: '2022-01-24T09:57:34.990Z'
+}
+{
+  message: 'Express Server Is Listening On Port: 80',
+  level: 'info',
+  timestamp: '2022-01-24T09:58:05.882Z'
+}
+{
+  message: undefined,
+  level: 'info',
+  timestamp: '2022-01-24T09:58:07.496Z'
+}
+{
+  message: 'Express Server Is Listening On Port: 80',
+  level: 'info',
+  timestamp: '2022-01-24T09:58:47.012Z'
+}
+{
+  message: 'Express Server Is Listening On Port: 80',
+  level: 'info',
+  timestamp: '2022-01-24T09:59:33.851Z'
+}
+{
+  message: FindCursor {
+    _events: [Object: null prototype] {},
+    _eventsCount: 0,
+    _maxListeners: undefined,
+    [Symbol(kCapture)]: false,
+    [Symbol(topology)]: <ref *1> Topology {
+      _events: [Object: null prototype] {
+        connectionPoolCreated: [Function (anonymous)],
+        connectionPoolClosed: [Function (anonymous)],
+        connectionCreated: [Function (anonymous)],
+        connectionReady: [Function (anonymous)],
+        connectionClosed: [Function (anonymous)],
+        connectionCheckOutStarted: [Function (anonymous)],
+        connectionCheckOutFailed: [Function (anonymous)],
+        connectionCheckedOut: [Function (anonymous)],
+        connectionCheckedIn: [Function (anonymous)],
+        connectionPoolCleared: [Function (anonymous)],
+        commandStarted: [Function (anonymous)],
+        commandSucceeded: [Function (anonymous)],
+        commandFailed: [Function (anonymous)],
+        serverOpening: [Function (anonymous)],
+        serverClosed: [Function (anonymous)],
+        serverDescriptionChanged: [Function (anonymous)],
+        topologyOpening: [Function (anonymous)],
+        topologyClosed: [Function (anonymous)],
+        topologyDescriptionChanged: [Function (anonymous)],
+        error: [Function (anonymous)],
+        timeout: [Function (anonymous)],
+        close: [Function (anonymous)],
+        serverHeartbeatStarted: [Function (anonymous)],
+        serverHeartbeatSucceeded: [Function (anonymous)],
+        serverHeartbeatFailed: [Function (anonymous)]
+      },
+      _eventsCount: 25,
+      _maxListeners: undefined,
+      bson: [Object: null prototype] {
+        serialize: [Function: serialize],
+        deserialize: [Function: deserialize]
+      },
+      s: {
+        id: 0,
+        options: [Object: null prototype] {
+          hosts: [ new HostAddress('127.0.0.1:27017') ],
+          compressors: [ 'none' ],
+          connectTimeoutMS: 30000,
+          directConnection: false,
+          metadata: {
+            driver: { name: 'nodejs', version: '4.3.1' },
+            os: {
+              type: 'Windows_NT',
+              name: 'win32',
+              architecture: 'x64',
+              version: '10.0.19042'
+            },
+            platform: 'Node.js v16.13.0, LE (unified)|Node.js v16.13.0, LE (unified)'
+          },
+          enableUtf8Validation: true,
+          forceServerObjectId: false,
+          heartbeatFrequencyMS: 10000,
+          keepAlive: true,
+          keepAliveInitialDelay: 120000,
+          loadBalanced: false,
+          localThresholdMS: 15,
+          logger: Logger { className: 'MongoClient' },
+          maxIdleTimeMS: 0,
+          maxPoolSize: 100,
+          minPoolSize: 0,
+          minHeartbeatFrequencyMS: 500,
+          monitorCommands: false,
+          noDelay: true,
+          pkFactory: { createPk: [Function: createPk] },
+          raw: false,
+          readPreference: ReadPreference {
+            mode: 'primary',
+            tags: undefined,
+            hedge: undefined,
+            maxStalenessSeconds: undefined,
+            minWireVersion: undefined
+          },
+          retryReads: true,
+          retryWrites: true,
+          serverSelectionTimeoutMS: 30000,
+          socketTimeoutMS: 0,
+          srvMaxHosts: 0,
+          srvServiceName: 'mongodb',
+          waitQueueTimeoutMS: 0,
+          zlibCompressionLevel: 0,
+          dbName: 'test',
+          userSpecifiedAuthSource: false,
+          userSpecifiedReplicaSet: false
+        },
+        seedlist: [ new HostAddress('127.0.0.1:27017') ],
+        state: 'connected',
+        description: TopologyDescription {
+          type: 'Single',
+          servers: Map(1) {
+            '127.0.0.1:27017' => ServerDescription {
+              _hostAddress: new HostAddress('127.0.0.1:27017'),
+              address: '127.0.0.1:27017',
+              type: 'Standalone',
+              hosts: [],
+              passives: [],
+              arbiters: [],
+              tags: {},
+              minWireVersion: 0,
+              maxWireVersion: 13,
+              roundTripTime: 11,
+              lastUpdateTime: 101942649,
+              lastWriteDate: 0,
+              topologyVersion: {
+                processId: new ObjectId("61ecea5a72d78901e7480086"),
+                counter: 0
+              },
+              logicalSessionTimeoutMinutes: 30
+            }
+          },
+          stale: false,
+          compatible: true,
+          heartbeatFrequencyMS: 10000,
+          localThresholdMS: 15,
+          commonWireVersion: 13,
+          logicalSessionTimeoutMinutes: 30
+        },
+        serverSelectionTimeoutMS: 30000,
+        heartbeatFrequencyMS: 10000,
+        minHeartbeatFrequencyMS: 500,
+        servers: Map(1) {
+          '127.0.0.1:27017' => <ref *2> Server {
+            _events: [Object: null prototype] {
+              serverHeartbeatStarted: [Function (anonymous)],
+              serverHeartbeatSucceeded: [Function (anonymous)],
+              serverHeartbeatFailed: [Function (anonymous)],
+              commandStarted: [Function (anonymous)],
+              commandSucceeded: [Function (anonymous)],
+              commandFailed: [Function (anonymous)],
+              connectionPoolCreated: [Function (anonymous)],
+              connectionPoolClosed: [Function (anonymous)],
+              connectionCreated: [Function (anonymous)],
+              connectionReady: [Function (anonymous)],
+              connectionClosed: [Function (anonymous)],
+              connectionCheckOutStarted: [Function (anonymous)],
+              connectionCheckOutFailed: [Function (anonymous)],
+              connectionCheckedOut: [Function (anonymous)],
+              connectionCheckedIn: [Function (anonymous)],
+              connectionPoolCleared: [Function (anonymous)],
+              descriptionReceived: [Function (anonymous)]
+            },
+            _eventsCount: 17,
+            _maxListeners: undefined,
+            serverApi: undefined,
+            s: {
+              description: ServerDescription {
+                _hostAddress: new HostAddress('127.0.0.1:27017'),
+                address: '127.0.0.1:27017',
+                type: 'Standalone',
+                hosts: [],
+                passives: [],
+                arbiters: [],
+                tags: {},
+                minWireVersion: 0,
+                maxWireVersion: 13,
+                roundTripTime: 11,
+                lastUpdateTime: 101942649,
+                lastWriteDate: 0,
+                topologyVersion: {
+                  processId: new ObjectId("61ecea5a72d78901e7480086"),
+                  counter: 0
+                },
+                logicalSessionTimeoutMinutes: 30
+              },
+              options: [Object: null prototype] {
+                hosts: [ new HostAddress('127.0.0.1:27017') ],
+                compressors: [ 'none' ],
+                connectTimeoutMS: 30000,
+                directConnection: false,
+                metadata: {
+                  driver: { name: 'nodejs', version: '4.3.1' },
+                  os: {
+                    type: 'Windows_NT',
+                    name: 'win32',
+                    architecture: 'x64',
+                    version: '10.0.19042'
+                  },
+                  platform: 'Node.js v16.13.0, LE (unified)|Node.js v16.13.0, LE (unified)'
+                },
+                enableUtf8Validation: true,
+                forceServerObjectId: false,
+                heartbeatFrequencyMS: 10000,
+                keepAlive: true,
+                keepAliveInitialDelay: 120000,
+                loadBalanced: false,
+                localThresholdMS: 15,
+                logger: Logger { className: 'MongoClient' },
+                maxIdleTimeMS: 0,
+                maxPoolSize: 100,
+                minPoolSize: 0,
+                minHeartbeatFrequencyMS: 500,
+                monitorCommands: false,
+                noDelay: true,
+                pkFactory: { createPk: [Function: createPk] },
+                raw: false,
+                readPreference: ReadPreference {
+                  mode: 'primary',
+                  tags: undefined,
+                  hedge: undefined,
+                  maxStalenessSeconds: undefined,
+                  minWireVersion: undefined
+                },
+                retryReads: true,
+                retryWrites: true,
+                serverSelectionTimeoutMS: 30000,
+                socketTimeoutMS: 0,
+                srvMaxHosts: 0,
+                srvServiceName: 'mongodb',
+                waitQueueTimeoutMS: 0,
+                zlibCompressionLevel: 0,
+                dbName: 'test',
+                userSpecifiedAuthSource: false,
+                userSpecifiedReplicaSet: false
+              },
+              logger: Logger { className: 'Server' },
+              state: 'connected',
+              topology: [Circular *1],
+              pool: ConnectionPool {
+                _events: [Object: null prototype] {
+                  connectionPoolCreated: [Function (anonymous)],
+                  connectionPoolClosed: [Function (anonymous)],
+                  connectionCreated: [Function (anonymous)],
+                  connectionReady: [Function (anonymous)],
+                  connectionClosed: [Function (anonymous)],
+                  connectionCheckOutStarted: [Function (anonymous)],
+                  connectionCheckOutFailed: [Function (anonymous)],
+                  connectionCheckedOut: [Function (anonymous)],
+                  connectionCheckedIn: [Function (anonymous)],
+                  connectionPoolCleared: [Function (anonymous)],
+                  commandStarted: [Function (anonymous)],
+                  commandSucceeded: [Function (anonymous)],
+                  commandFailed: [Function (anonymous)],
+                  clusterTimeReceived: [Function (anonymous)]
+                },
+                _eventsCount: 14,
+                _maxListeners: undefined,
+                closed: false,
+                options: {
+                  hostAddress: new HostAddress('127.0.0.1:27017'),
+                  hosts: [ new HostAddress('127.0.0.1:27017') ],
+                  compressors: [ 'none' ],
+                  connectTimeoutMS: 30000,
+                  directConnection: false,
+                  metadata: {
+                    driver: { name: 'nodejs', version: '4.3.1' },
+                    os: {
+                      type: 'Windows_NT',
+                      name: 'win32',
+                      architecture: 'x64',
+                      version: '10.0.19042'
+                    },
+                    platform: 'Node.js v16.13.0, LE (unified)|Node.js v16.13.0, LE (unified)'
+                  },
+                  enableUtf8Validation: true,
+                  forceServerObjectId: false,
+                  heartbeatFrequencyMS: 10000,
+                  keepAlive: true,
+                  keepAliveInitialDelay: 120000,
+                  loadBalanced: false,
+                  localThresholdMS: 15,
+                  logger: Logger { className: 'MongoClient' },
+                  maxIdleTimeMS: 0,
+                  maxPoolSize: 100,
+                  minPoolSize: 0,
+                  minHeartbeatFrequencyMS: 500,
+                  monitorCommands: false,
+                  noDelay: true,
+                  pkFactory: { createPk: [Function: createPk] },
+                  raw: false,
+                  readPreference: ReadPreference {
+                    mode: 'primary',
+                    tags: undefined,
+                    hedge: undefined,
+                    maxStalenessSeconds: undefined,
+                    minWireVersion: undefined
+                  },
+                  retryReads: true,
+                  retryWrites: true,
+                  serverSelectionTimeoutMS: 30000,
+                  socketTimeoutMS: 0,
+                  srvMaxHosts: 0,
+                  srvServiceName: 'mongodb',
+                  waitQueueTimeoutMS: 0,
+                  zlibCompressionLevel: 0,
+                  dbName: 'test',
+                  userSpecifiedAuthSource: false,
+                  userSpecifiedReplicaSet: false,
+                  connectionType: [class Connection extends TypedEventEmitter] {
+                    COMMAND_STARTED: 'commandStarted',
+                    COMMAND_SUCCEEDED: 'commandSucceeded',
+                    COMMAND_FAILED: 'commandFailed',
+                    CLUSTER_TIME_RECEIVED: 'clusterTimeReceived',
+                    CLOSE: 'close',
+                    MESSAGE: 'message',
+                    PINNED: 'pinned',
+                    UNPINNED: 'unpinned'
+                  },
+                  autoEncrypter: undefined
+                },
+                [Symbol(kCapture)]: false,
+                [Symbol(logger)]: Logger { className: 'ConnectionPool' },
+                [Symbol(connections)]: Denque {
+                  _head: 0,
+                  _tail: 0,
+                  _capacity: undefined,
+                  _capacityMask: 3,
+                  _list: [ <4 empty items> ]
+                },
+                [Symbol(permits)]: 100,
+                [Symbol(minPoolSizeTimer)]: undefined,
+                [Symbol(generation)]: 0,
+                [Symbol(serviceGenerations)]: Map(0) {},
+                [Symbol(connectionCounter)]: Object [Generator] {},
+                [Symbol(cancellationToken)]: CancellationToken {
+                  _events: [Object: null prototype] {},
+                  _eventsCount: 0,
+                  _maxListeners: Infinity,
+                  [Symbol(kCapture)]: false
+                },
+                [Symbol(waitQueue)]: Denque {
+                  _head: 0,
+                  _tail: 0,
+                  _capacity: undefined,
+                  _capacityMask: 3,
+                  _list: [ <4 empty items> ]
+                },
+                [Symbol(metrics)]: ConnectionPoolMetrics {
+                  txnConnections: 0,
+                  cursorConnections: 0,
+                  otherConnections: 0
+                },
+                [Symbol(checkedOut)]: 0,
+                [Symbol(processingWaitQueue)]: false
+              }
+            },
+            [Symbol(kCapture)]: false,
+            [Symbol(monitor)]: Monitor {
+              _events: [Object: null prototype] {
+                serverHeartbeatStarted: [Function (anonymous)],
+                serverHeartbeatSucceeded: [ [Function (anonymous)], [Function (anonymous)] ],
+                serverHeartbeatFailed: [Function (anonymous)],
+                resetConnectionPool: [Function (anonymous)],
+                resetServer: [Function (anonymous)]
+              },
+              _eventsCount: 5,
+              _maxListeners: undefined,
+              s: { state: 'monitoring' },
+              address: '127.0.0.1:27017',
+              options: {
+                connectTimeoutMS: 30000,
+                heartbeatFrequencyMS: 10000,
+                minHeartbeatFrequencyMS: 500
+              },
+              connectOptions: {
+                id: '<monitor>',
+                generation: 0,
+                connectionType: [class Connection extends TypedEventEmitter] {
+                  COMMAND_STARTED: 'commandStarted',
+                  COMMAND_SUCCEEDED: 'commandSucceeded',
+                  COMMAND_FAILED: 'commandFailed',
+                  CLUSTER_TIME_RECEIVED: 'clusterTimeReceived',
+                  CLOSE: 'close',
+                  MESSAGE: 'message',
+                  PINNED: 'pinned',
+                  UNPINNED: 'unpinned'
+                },
+                cancellationToken: CancellationToken {
+                  _events: [Object: null prototype] {},
+                  _eventsCount: 0,
+                  _maxListeners: Infinity,
+                  [Symbol(kCapture)]: false
+                },
+                hostAddress: new HostAddress('127.0.0.1:27017'),
+                hosts: [ new HostAddress('127.0.0.1:27017') ],
+                compressors: [ 'none' ],
+                connectTimeoutMS: 30000,
+                directConnection: false,
+                metadata: {
+                  driver: { name: 'nodejs', version: '4.3.1' },
+                  os: {
+                    type: 'Windows_NT',
+                    name: 'win32',
+                    architecture: 'x64',
+                    version: '10.0.19042'
+                  },
+                  platform: 'Node.js v16.13.0, LE (unified)|Node.js v16.13.0, LE (unified)'
+                },
+                enableUtf8Validation: true,
+                forceServerObjectId: false,
+                heartbeatFrequencyMS: 10000,
+                keepAlive: true,
+                keepAliveInitialDelay: 120000,
+                loadBalanced: false,
+                localThresholdMS: 15,
+                logger: Logger { className: 'MongoClient' },
+                maxIdleTimeMS: 0,
+                maxPoolSize: 100,
+                minPoolSize: 0,
+                minHeartbeatFrequencyMS: 500,
+                monitorCommands: false,
+                noDelay: true,
+                pkFactory: { createPk: [Function: createPk] },
+                raw: false,
+                readPreference: ReadPreference {
+                  mode: 'primary',
+                  tags: undefined,
+                  hedge: undefined,
+                  maxStalenessSeconds: undefined,
+                  minWireVersion: undefined
+                },
+                retryReads: true,
+                retryWrites: true,
+                serverSelectionTimeoutMS: 30000,
+                socketTimeoutMS: 0,
+                srvMaxHosts: 0,
+                srvServiceName: 'mongodb',
+                waitQueueTimeoutMS: 0,
+                zlibCompressionLevel: 0,
+                dbName: 'test',
+                userSpecifiedAuthSource: false,
+                userSpecifiedReplicaSet: false,
+                promoteLongs: true,
+                promoteValues: true,
+                promoteBuffers: true
+              },
+              [Symbol(kCapture)]: false,
+              [Symbol(server)]: [Circular *2],
+              [Symbol(connection)]: Connection {
+                _events: [Object: null prototype] {},
+                _eventsCount: 0,
+                _maxListeners: undefined,
+                id: '<monitor>',
+                address: '127.0.0.1:27017',
+                socketTimeoutMS: 0,
+                monitorCommands: false,
+                serverApi: undefined,
+                closed: false,
+                destroyed: false,
+                helloOk: true,
+                lastHelloMS: 6,
+                [Symbol(kCapture)]: false,
+                [Symbol(description)]: StreamDescription {
+                  address: '127.0.0.1:27017',
+                  type: 'Standalone',
+                  minWireVersion: 0,
+                  maxWireVersion: 13,
+                  maxBsonObjectSize: 16777216,
+                  maxMessageSizeBytes: 48000000,
+                  maxWriteBatchSize: 100000,
+                  logicalSessionTimeoutMinutes: 30,
+                  loadBalanced: false,
+                  compressors: [ 'none' ]
+                },
+                [Symbol(generation)]: 0,
+                [Symbol(lastUseTime)]: 101942642,
+                [Symbol(queue)]: Map(1) {
+                  2 => {
+                    requestId: 2,
+                    cb: [Function (anonymous)],
+                    session: undefined,
+                    fullResult: false,
+                    noResponse: false,
+                    documentsReturnedIn: undefined,
+                    command: true,
+                    promoteLongs: true,
+                    promoteValues: true,
+                    promoteBuffers: false,
+                    bsonRegExp: false,
+                    enableUtf8Validation: true,
+                    raw: false,
+                    started: 0,
+                    socketTimeoutOverride: true
+                  }
+                },
+                [Symbol(messageStream)]: <ref *3> MessageStream {
+                  _readableState: ReadableState {
+                    objectMode: false,
+                    highWaterMark: 16384,
+                    buffer: BufferList { head: null, tail: null, length: 0 },
+                    length: 0,
+                    pipes: [
+                      <ref *4> Socket {
+                        connecting: false,
+                        _hadError: false,
+                        _parent: null,
+                        _host: null,
+                        _readableState: ReadableState {
+                          objectMode: false,
+                          highWaterMark: 16384,
+                          buffer: BufferList { head: null, tail: null, length: 0 },
+                          length: 0,
+                          pipes: [ [Circular *3] ],
+                          flowing: true,
+                          ended: false,
+                          endEmitted: false,
+                          reading: true,
+                          constructed: true,
+                          sync: false,
+                          needReadable: true,
+                          emittedReadable: false,
+                          readableListening: false,
+                          resumeScheduled: false,
+                          errorEmitted: false,
+                          emitClose: false,
+                          autoDestroy: true,
+                          destroyed: false,
+                          errored: null,
+                          closed: false,
+                          closeEmitted: false,
+                          defaultEncoding: 'utf8',
+                          awaitDrainWriters: null,
+                          multiAwaitDrain: false,
+                          readingMore: false,
+                          dataEmitted: true,
+                          decoder: null,
+                          encoding: null,
+                          [Symbol(kPaused)]: false
+                        },
+                        _events: [Object: null prototype] {
+                          end: [
+                            [Function: onReadableStreamEnd],
+                            [Function: bound onceWrapper] {
+                              listener: [Function: onend]
+                            }
+                          ],
+                          error: [
+                            [Function: onerror],
+                            [Function (anonymous)]
+                          ],
+                          close: [
+                            [Function (anonymous)],
+                            [Function: bound onceWrapper] {
+                              listener: [Function: onclose]
+                            }
+                          ],
+                          timeout: [Function (anonymous)],
+                          data: [Function: ondata],
+                          unpipe: [Function: onunpipe],
+                          finish: [Function: bound onceWrapper] {
+                            listener: [Function: onfinish]
+                          }
+                        },
+                        _eventsCount: 7,
+                        _maxListeners: undefined,
+                        _writableState: WritableState {
+                          objectMode: false,
+                          highWaterMark: 16384,
+                          finalCalled: false,
+                          needDrain: false,
+                          ending: false,
+                          ended: false,
+                          finished: false,
+                          destroyed: false,
+                          decodeStrings: false,
+                          defaultEncoding: 'utf8',
+                          length: 0,
+                          writing: false,
+                          corked: 0,
+                          sync: false,
+                          bufferProcessing: false,
+                          onwrite: [Function: bound onwrite],
+                          writecb: null,
+                          writelen: 0,
+                          afterWriteTickInfo: null,
+                          buffered: [],
+                          bufferedIndex: 0,
+                          allBuffers: true,
+                          allNoop: true,
+                          pendingcb: 0,
+                          constructed: true,
+                          prefinished: false,
+                          errorEmitted: false,
+                          emitClose: false,
+                          autoDestroy: true,
+                          errored: null,
+                          closed: false,
+                          closeEmitted: false,
+                          [Symbol(kOnFinished)]: []
+                        },
+                        allowHalfOpen: false,
+                        _sockname: null,
+                        _pendingData: null,
+                        _pendingEncoding: '',
+                        server: null,
+                        _server: null,
+                        timeout: 40000,
+                        _peername: {
+                          address: '127.0.0.1',
+                          family: 'IPv4',
+                          port: 27017
+                        },
+                        [Symbol(async_id_symbol)]: 10,
+                        [Symbol(kHandle)]: TCP {
+                          reading: true,
+                          onconnection: null,
+                          [Symbol(owner_symbol)]: [Circular *4]
+                        },
+                        [Symbol(kSetNoDelay)]: true,
+                        [Symbol(lastWriteQueueSize)]: 0,
+                        [Symbol(timeout)]: Timeout {
+                          _idleTimeout: 40000,
+                          _idlePrev: [TimersList],
+                          _idleNext: [TimersList],
+                          _idleStart: 893,
+                          _onTimeout: [Function: bound ],
+                          _timerArgs: undefined,
+                          _repeat: null,
+                          _destroyed: false,
+                          [Symbol(refed)]: false,
+                          [Symbol(kHasPrimitive)]: false,
+                          [Symbol(asyncId)]: 38,
+                          [Symbol(triggerId)]: 36
+                        },
+                        [Symbol(kBuffer)]: null,
+                        [Symbol(kBufferCb)]: null,
+                        [Symbol(kBufferGen)]: null,
+                        [Symbol(kCapture)]: false,
+                        [Symbol(kBytesRead)]: 0,
+                        [Symbol(kBytesWritten)]: 0
+                      }
+                    ],
+                    flowing: true,
+                    ended: false,
+                    endEmitted: false,
+                    reading: true,
+                    constructed: true,
+                    sync: false,
+                    needReadable: true,
+                    emittedReadable: false,
+                    readableListening: false,
+                    resumeScheduled: false,
+                    errorEmitted: false,
+                    emitClose: true,
+                    autoDestroy: true,
+                    destroyed: false,
+                    errored: null,
+                    closed: false,
+                    closeEmitted: false,
+                    defaultEncoding: 'utf8',
+                    awaitDrainWriters: null,
+                    multiAwaitDrain: false,
+                    readingMore: false,
+                    dataEmitted: true,
+                    decoder: null,
+                    encoding: null,
+                    [Symbol(kPaused)]: false
+                  },
+                  _events: [Object: null prototype] {
+                    message: [Function: messageHandler],
+                    error: [ [Function: onerror], [Function (anonymous)] ],
+                    unpipe: [Function: onunpipe],
+                    close: [Function: bound onceWrapper] {
+                      listener: [Function: onclose]
+                    },
+                    finish: [Function: bound onceWrapper] {
+                      listener: [Function: onfinish]
+                    },
+                    end: [Function: bound onceWrapper] {
+                      listener: [Function: onend]
+                    },
+                    data: [Function: ondata]
+                  },
+                  _eventsCount: 7,
+                  _maxListeners: undefined,
+                  _writableState: WritableState {
+                    objectMode: false,
+                    highWaterMark: 16384,
+                    finalCalled: false,
+                    needDrain: false,
+                    ending: false,
+                    ended: false,
+                    finished: false,
+                    destroyed: false,
+                    decodeStrings: true,
+                    defaultEncoding: 'utf8',
+                    length: 0,
+                    writing: false,
+                    corked: 0,
+                    sync: false,
+                    bufferProcessing: false,
+                    onwrite: [Function: bound onwrite],
+                    writecb: null,
+                    writelen: 0,
+                    afterWriteTickInfo: null,
+                    buffered: [],
+                    bufferedIndex: 0,
+                    allBuffers: true,
+                    allNoop: true,
+                    pendingcb: 0,
+                    constructed: true,
+                    prefinished: false,
+                    errorEmitted: false,
+                    emitClose: true,
+                    autoDestroy: true,
+                    errored: null,
+                    closed: false,
+                    closeEmitted: false,
+                    [Symbol(kOnFinished)]: []
+                  },
+                  allowHalfOpen: true,
+                  maxBsonMessageSize: 67108864,
+                  [Symbol(kCapture)]: false,
+                  [Symbol(buffer)]: BufferPool {
+                    [Symbol(buffers)]: [],
+                    [Symbol(length)]: 0
+                  }
+                },
+                [Symbol(stream)]: <ref *4> Socket {
+                  connecting: false,
+                  _hadError: false,
+                  _parent: null,
+                  _host: null,
+                  _readableState: ReadableState {
+                    objectMode: false,
+                    highWaterMark: 16384,
+                    buffer: BufferList { head: null, tail: null, length: 0 },
+                    length: 0,
+                    pipes: [
+                      <ref *3> MessageStream {
+                        _readableState: ReadableState {
+                          objectMode: false,
+                          highWaterMark: 16384,
+                          buffer: BufferList { head: null, tail: null, length: 0 },
+                          length: 0,
+                          pipes: [ [Circular *4] ],
+                          flowing: true,
+                          ended: false,
+                          endEmitted: false,
+                          reading: true,
+                          constructed: true,
+                          sync: false,
+                          needReadable: true,
+                          emittedReadable: false,
+                          readableListening: false,
+                          resumeScheduled: false,
+                          errorEmitted: false,
+                          emitClose: true,
+                          autoDestroy: true,
+                          destroyed: false,
+                          errored: null,
+                          closed: false,
+                          closeEmitted: false,
+                          defaultEncoding: 'utf8',
+                          awaitDrainWriters: null,
+                          multiAwaitDrain: false,
+                          readingMore: false,
+                          dataEmitted: true,
+                          decoder: null,
+                          encoding: null,
+                          [Symbol(kPaused)]: false
+                        },
+                        _events: [Object: null prototype] {
+                          message: [Function: messageHandler],
+                          error: [
+                            [Function: onerror],
+                            [Function (anonymous)]
+                          ],
+                          unpipe: [Function: onunpipe],
+                          close: [Function: bound onceWrapper] {
+                            listener: [Function: onclose]
+                          },
+                          finish: [Function: bound onceWrapper] {
+                            listener: [Function: onfinish]
+                          },
+                          end: [Function: bound onceWrapper] {
+                            listener: [Function: onend]
+                          },
+                          data: [Function: ondata]
+                        },
+                        _eventsCount: 7,
+                        _maxListeners: undefined,
+                        _writableState: WritableState {
+                          objectMode: false,
+                          highWaterMark: 16384,
+                          finalCalled: false,
+                          needDrain: false,
+                          ending: false,
+                          ended: false,
+                          finished: false,
+                          destroyed: false,
+                          decodeStrings: true,
+                          defaultEncoding: 'utf8',
+                          length: 0,
+                          writing: false,
+                          corked: 0,
+                          sync: false,
+                          bufferProcessing: false,
+                          onwrite: [Function: bound onwrite],
+                          writecb: null,
+                          writelen: 0,
+                          afterWriteTickInfo: null,
+                          buffered: [],
+                          bufferedIndex: 0,
+                          allBuffers: true,
+                          allNoop: true,
+                          pendingcb: 0,
+                          constructed: true,
+                          prefinished: false,
+                          errorEmitted: false,
+                          emitClose: true,
+                          autoDestroy: true,
+                          errored: null,
+                          closed: false,
+                          closeEmitted: false,
+                          [Symbol(kOnFinished)]: []
+                        },
+                        allowHalfOpen: true,
+                        maxBsonMessageSize: 67108864,
+                        [Symbol(kCapture)]: false,
+                        [Symbol(buffer)]: BufferPool {
+                          [Symbol(buffers)]: [],
+                          [Symbol(length)]: 0
+                        }
+                      }
+                    ],
+                    flowing: true,
+                    ended: false,
+                    endEmitted: false,
+                    reading: true,
+                    constructed: true,
+                    sync: false,
+                    needReadable: true,
+                    emittedReadable: false,
+                    readableListening: false,
+                    resumeScheduled: false,
+                    errorEmitted: false,
+                    emitClose: false,
+                    autoDestroy: true,
+                    destroyed: false,
+                    errored: null,
+                    closed: false,
+                    closeEmitted: false,
+                    defaultEncoding: 'utf8',
+                    awaitDrainWriters: null,
+                    multiAwaitDrain: false,
+                    readingMore: false,
+                    dataEmitted: true,
+                    decoder: null,
+                    encoding: null,
+                    [Symbol(kPaused)]: false
+                  },
+                  _events: [Object: null prototype] {
+                    end: [
+                      [Function: onReadableStreamEnd],
+                      [Function: bound onceWrapper] {
+                        listener: [Function: onend]
+                      }
+                    ],
+                    error: [ [Function: onerror], [Function (anonymous)] ],
+                    close: [
+                      [Function (anonymous)],
+                      [Function: bound onceWrapper] {
+                        listener: [Function: onclose]
+                      }
+                    ],
+                    timeout: [Function (anonymous)],
+                    data: [Function: ondata],
+                    unpipe: [Function: onunpipe],
+                    finish: [Function: bound onceWrapper] {
+                      listener: [Function: onfinish]
+                    }
+                  },
+                  _eventsCount: 7,
+                  _maxListeners: undefined,
+                  _writableState: WritableState {
+                    objectMode: false,
+                    highWaterMark: 16384,
+                    finalCalled: false,
+                    needDrain: false,
+                    ending: false,
+                    ended: false,
+                    finished: false,
+                    destroyed: false,
+                    decodeStrings: false,
+                    defaultEncoding: 'utf8',
+                    length: 0,
+                    writing: false,
+                    corked: 0,
+                    sync: false,
+                    bufferProcessing: false,
+                    onwrite: [Function: bound onwrite],
+                    writecb: null,
+                    writelen: 0,
+                    afterWriteTickInfo: null,
+                    buffered: [],
+                    bufferedIndex: 0,
+                    allBuffers: true,
+                    allNoop: true,
+                    pendingcb: 0,
+                    constructed: true,
+                    prefinished: false,
+                    errorEmitted: false,
+                    emitClose: false,
+                    autoDestroy: true,
+                    errored: null,
+                    closed: false,
+                    closeEmitted: false,
+                    [Symbol(kOnFinished)]: []
+                  },
+                  allowHalfOpen: false,
+                  _sockname: null,
+                  _pendingData: null,
+                  _pendingEncoding: '',
+                  server: null,
+                  _server: null,
+                  timeout: 40000,
+                  _peername: { address: '127.0.0.1', family: 'IPv4', port: 27017 },
+                  [Symbol(async_id_symbol)]: 10,
+                  [Symbol(kHandle)]: TCP {
+                    reading: true,
+                    onconnection: null,
+                    [Symbol(owner_symbol)]: [Circular *4]
+                  },
+                  [Symbol(kSetNoDelay)]: true,
+                  [Symbol(lastWriteQueueSize)]: 0,
+                  [Symbol(timeout)]: Timeout {
+                    _idleTimeout: 40000,
+                    _idlePrev: [TimersList],
+                    _idleNext: [TimersList],
+                    _idleStart: 893,
+                    _onTimeout: [Function: bound ],
+                    _timerArgs: undefined,
+                    _repeat: null,
+                    _destroyed: false,
+                    [Symbol(refed)]: false,
+                    [Symbol(kHasPrimitive)]: false,
+                    [Symbol(asyncId)]: 38,
+                    [Symbol(triggerId)]: 36
+                  },
+                  [Symbol(kBuffer)]: null,
+                  [Symbol(kBufferCb)]: null,
+                  [Symbol(kBufferGen)]: null,
+                  [Symbol(kCapture)]: false,
+                  [Symbol(kBytesRead)]: 0,
+                  [Symbol(kBytesWritten)]: 0
+                },
+                [Symbol(hello)]: {
+                  helloOk: true,
+                  ismaster: true,
+                  topologyVersion: {
+                    processId: new ObjectId("61ecea5a72d78901e7480086"),
+                    counter: 0
+                  },
+                  maxBsonObjectSize: 16777216,
+                  maxMessageSizeBytes: 48000000,
+                  maxWriteBatchSize: 100000,
+                  localTime: 2022-01-24T09:59:33.843Z,
+                  logicalSessionTimeoutMinutes: 30,
+                  connectionId: 179,
+                  minWireVersion: 0,
+                  maxWireVersion: 13,
+                  readOnly: false,
+                  ok: 1,
+                  isWritablePrimary: true
+                }
+              },
+              [Symbol(cancellationToken)]: CancellationToken {
+                _events: [Object: null prototype] {},
+                _eventsCount: 0,
+                _maxListeners: Infinity,
+                [Symbol(kCapture)]: false
+              },
+              [Symbol(monitorId)]: { wake: [Function: wake], stop: [Function: stop] },
+              [Symbol(rttPinger)]: RTTPinger {
+                closed: false,
+                [Symbol(connection)]: undefined,
+                [Symbol(cancellationToken)]: CancellationToken {
+                  _events: [Object: null prototype] {},
+                  _eventsCount: 0,
+                  _maxListeners: Infinity,
+                  [Symbol(kCapture)]: false
+                },
+                [Symbol(roundTripTime)]: 0,
+                [Symbol(monitorId)]: Timeout {
+                  _idleTimeout: 10000,
+                  _idlePrev: [TimersList],
+                  _idleNext: [TimersList],
+                  _idleStart: 892,
+                  _onTimeout: [Function (anonymous)],
+                  _timerArgs: undefined,
+                  _repeat: null,
+                  _destroyed: false,
+                  [Symbol(refed)]: true,
+                  [Symbol(kHasPrimitive)]: false,
+                  [Symbol(asyncId)]: 37,
+                  [Symbol(triggerId)]: 36
+                }
+              }
+            }
+          }
+        },
+        sessionPool: ServerSessionPool { topology: [Circular *1], sessions: [] },
+        sessions: Set(0) {},
+        credentials: undefined,
+        clusterTime: undefined,
+        connectionTimers: Set(0) {},
+        detectShardedTopology: [Function: detectShardedTopology],
+        detectSrvRecords: [Function: detectSrvRecords]
+      },
+      [Symbol(kCapture)]: false,
+      [Symbol(waitQueue)]: Denque {
+        _head: 2,
+        _tail: 2,
+        _capacity: undefined,
+        _capacityMask: 3,
+        _list: [ undefined, undefined, <2 empty items> ]
+      }
+    },
+    [Symbol(namespace)]: MongoDBNamespace { db: 'test', collection: 'flights' },
+    [Symbol(documents)]: [],
+    [Symbol(initialized)]: false,
+    [Symbol(closed)]: false,
+    [Symbol(killed)]: false,
+    [Symbol(options)]: {
+      readPreference: ReadPreference {
+        mode: 'primary',
+        tags: undefined,
+        hedge: undefined,
+        maxStalenessSeconds: undefined,
+        minWireVersion: undefined
+      },
+      fieldsAsRaw: {},
+      promoteValues: true,
+      promoteBuffers: false,
+      promoteLongs: true,
+      serializeFunctions: false,
+      ignoreUndefined: false,
+      bsonRegExp: false,
+      raw: false,
+      enableUtf8Validation: true
+    },
+    [Symbol(filter)]: {},
+    [Symbol(builtOptions)]: {
+      raw: false,
+      promoteLongs: true,
+      promoteValues: true,
+      promoteBuffers: false,
+      ignoreUndefined: false,
+      bsonRegExp: false,
+      serializeFunctions: false,
+      fieldsAsRaw: {},
+      enableUtf8Validation: true,
+      readPreference: ReadPreference {
+        mode: 'primary',
+        tags: undefined,
+        hedge: undefined,
+        maxStalenessSeconds: undefined,
+        minWireVersion: undefined
+      }
+    }
+  },
+  level: 'info',
+  timestamp: '2022-01-24T09:59:35.863Z'
+}
+{
+  message: 'Express Server Is Listening On Port: 80',
+  level: 'info',
+  timestamp: '2022-01-24T09:59:49.382Z'
+}
+{
+  message: 'Express Server Is Listening On Port: 80',
+  level: 'info',
+  timestamp: '2022-01-24T10:00:37.501Z'
+}
+{
+  message: 'Express Server Is Listening On Port: 80',
+  level: 'info',
+  timestamp: '2022-01-24T10:01:40.658Z'
+}
+{
+  message: 'Express Server Is Listening On Port: 80',
+  level: 'info',
+  timestamp: '2022-01-24T10:01:59.445Z'
+}
+{
+  message: 'Express Server Is Listening On Port: 80',
+  level: 'info',
+  timestamp: '2022-01-24T13:41:50.839Z'
+}
+{
+  message: 'Express Server Is Listening On Port: 80',
+  level: 'info',
+  timestamp: '2022-01-24T13:42:40.548Z'
+}
+{
+  message: 'Express Server Is Listening On Port: 80',
+  level: 'info',
+  timestamp: '2022-01-24T13:44:06.675Z'
+}
