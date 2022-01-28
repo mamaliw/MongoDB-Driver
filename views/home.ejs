@@ -23,6 +23,9 @@
       crossorigin="anonymous"
     ></script>
     <style>
+      td {
+        width: <%=`${100/Object.keys(data).length}%`%>>;
+      }
       .mb-3,
       button {
         box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1),
