@@ -23,9 +23,6 @@
       crossorigin="anonymous"
     ></script>
     <style>
-      td {
-        width: <%=`${100/Object.keys(data).length}%`%>>;
-      }
       .mb-3,
       button {
         box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1),
@@ -173,7 +170,7 @@
           <span
             class="input-group-text"
             id="basic-addon3"
-            style="font-size: 1.5rem"
+            style="font-size: 1.5rem; width: auto"
             >Departure time</span
           >
           <input
