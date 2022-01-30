@@ -55,17 +55,38 @@ router.get('/', async (req, res) => {
                 }
             })
         }
+        if (req.query.page) {
+            req.query.page = parseInt(req.query.page)
+            if (req.query.mode === 'next')
+                req.query.page++
+            else if (req.query.mode === 'prev' && req.query.page>1)
+                req.query.page--
+            query.push({$skip: req.query.page*5-5})
+            query.push({ $limit : 5})
+        }
         const data = await flightsServices.aggregate(query)
+        // console.log(data)
         res.render('home', {data, filters: req.query})
     } catch (e) {
         log.error(e.stack)
         res.status(400).send(e.message)
     }
 })
-router.post('/test', async (req, res) => {
+
+router.get('/modal/:id', async (req, res) => {
     try {
-        console.log(req.body)
-        res.send('OK')
+        // console.log(req.params.id)
+        // console.log(req.query)
+
+        const id = req.params.id
+
+        if (req.query.mode === 'remove'){
+            await flightsServices.removeById(id)
+            res.redirect('/')
+        }else if (req.query.mode === 'edit'){
+            await flightsServices.updateById(id,{$set:{capacity:parseInt(req.query.capacity)}})
+            res.redirect('/')
+        }
     } catch (e) {
         log.error(e.stack)
         res.status(400).send(e.message)

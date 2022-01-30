@@ -1,4 +1,4 @@
-const mongodb = require('mongodb')
+const {mongodb,ObjectId} = require('mongodb')
 const collection = DB.collection('flights')
 module.exports = {
 
@@ -13,11 +13,14 @@ module.exports = {
     async get(filter) {
         return await collection.find(filter).toArray()
     },
+    async removeById(id) {
+        return await collection.deleteOne({_id:ObjectId(id)})
+    },
     async aggregate(query) {
         return await collection.aggregate(query).toArray()
     },
-    async update(filter, update) {
-        return await collection.updateOne(filter, update)
+    async updateById(id, update) {
+        return await collection.updateOne({_id:ObjectId(id)}, update)
     },
 
 }
