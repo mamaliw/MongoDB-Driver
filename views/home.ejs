@@ -176,7 +176,23 @@
                     aria-describedby="basic-addon3"
                     style="font-size: 1.5rem"
             />
+            <span
+                    class="input-group-text"
+                    id="basic-addon3"
+                    style="font-size: 1.5rem"
+            >Capacity</span
+            >
+            <input
+                    type="number"
+                    name="capacity"
+                    value="<%= filters.capacity %>"
+                    class="form-control"
+                    id="basic-url"
+                    aria-describedby="basic-addon3"
+                    style="font-size: 1.5rem"
+            />
         </div>
+
         <div class="input-group mb-3">
           <span
                   class="input-group-text"
@@ -196,9 +212,17 @@
         <button type="submit" class="btn btn-primary" style="font-size: 1.5rem">
             Filter
         </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#exampleModal1" style="font-size: 1.1rem; ma">
+            Bulk Edit
+        </button>
         <div class="input-group mb-3 " style="width: 12%; margin: 0 auto; box-shadow: none; height: 10px">
-            <button class="btn btn-outline-secondary" name="mode" value="prev" type="submit" style="box-shadow: none">Prev</button>
-            <input type="text" name="page" class="form-control text-center" value="<%=filters.page?filters.page:1%>"  aria-describedby="button-addon1" style="font-size: 1.5rem" readonly>
+            <button class="btn btn-outline-secondary" name="mode" value="prev" type="submit" style="box-shadow: none">
+                Prev
+            </button>
+            <input type="text" name="page" class="form-control text-center"
+                   value="<%= filters.page ? filters.page : 1 %>"
+                   aria-describedby="button-addon1" style="font-size: 1.5rem" readonly>
             <button class="btn btn-outline-secondary" name="mode" value="next" style="box-shadow: none" type="submit"
                     id="apply">Next
             </button>
@@ -285,6 +309,65 @@
 
 
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" style="font-size: 1.2rem" class="btn btn-secondary"
+                                data-bs-dismiss="modal">Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!--    Modal Edit-->
+    <form action="/bulk/" method="get" class="row row-cols-lg-auto g-3 align-items-center">
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1"
+             aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 600px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Bulk Edit</h5>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Company</span>
+                        <input type="text" name="company" class="form-control" placeholder="" aria-label="Username"
+                               aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Origin</span>
+                        <input type="text" class="form-control" name="origin" placeholder="" aria-label="Username"
+                               aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Destination</span>
+                        <input type="text" name="destination" class="form-control" placeholder="" aria-label="Username"
+                               aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+          <span
+                  class="input-group-text"
+                  id="basic-addon3"
+                  style="font-size: 1.5rem"
+          >Departure time</span
+          >
+                        <input
+                                type="datetime-local"
+                                name="departureTime"
+                                class="form-control"
+                                id="basic-url"
+                                aria-describedby="basic-addon3"
+                                style="font-size: 1.5rem"
+                        />
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">New Capacity</span>
+                        <input type="number" name="capacity" class="form-control" placeholder="" aria-label="Username"
+                               aria-describedby="basic-addon1">
+                    </div>
+
+                    <button type="submit">Submit</button>
+
                     <div class="modal-footer">
                         <button type="button" style="font-size: 1.2rem" class="btn btn-secondary"
                                 data-bs-dismiss="modal">Close

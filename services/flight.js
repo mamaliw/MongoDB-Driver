@@ -4,9 +4,12 @@ module.exports = {
 
     async save(data) {
 
-        data.departureDate = new Date(data.departureDate)
-        data.price = parseInt(data.price)
-        data.capacity = parseInt(data.capacity)
+        // data.departureDate = new Date(data.departureDate)
+        // console.log(momentt(data.departureDate+data['landing time'], "YYYY-MM-DD HH:MMA"))
+        data.departureDate = momentt(`${data.departureDate} ${data['landing time']} +0000`, "YYYY-MM-DD hh:mmA Z").toDate()
+        // data.price = parseInt(data.price)
+        // data.capacity = parseInt(data.capacity)
+        data.createdAt = new Date()
         return await collection.insertOne(data)
 
     },
@@ -22,5 +25,11 @@ module.exports = {
     async updateById(id, update) {
         return await collection.updateOne({_id:ObjectId(id)}, update)
     },
+    async update(filter, update) {
+        return await collection.updateMany(filter, update)
+    },
+    convertDate(date){
+        return momentt(`${data.departureDate} ${data['landing time']} +0000`, "YYYY-MM-DD hh:mmA Z").toDate()
+    }
 
 }

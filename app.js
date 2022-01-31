@@ -1,8 +1,10 @@
 (async () => {
+        const moment = require('moment')
         require('dotenv').config()
         require('./util/winston')
         const express = require('express')
         global.DB = await (new (require('./util/database'))).get()
+        global.momentt = moment
         //-----------------------------
         const flightService = require('./services/flight')
         //-----------------------------

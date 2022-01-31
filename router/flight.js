@@ -33,6 +33,13 @@ router.get('/', async (req, res) => {
                 }
             })
         }
+        if (req.query.capacity) {
+            query.push({
+                $match: {
+                    capacity: parseInt(req.query.capacity)
+                }
+            })
+        }
         if (req.query.flightClass && req.query.flightClass !== 'All') {
             query.push({
                 $match: {
@@ -92,12 +99,36 @@ router.get('/modal/:id', async (req, res) => {
         res.status(400).send(e.message)
     }
 })
+router.get('/bulk', async (req, res) => {
+    try {
+        console.log(req.query)
+        const {company, origin, destination, departureTime, capacity} = req.query
+
+        await flightsServices.update({
+            company,
+            origin,
+            destination,
+            departureDate: new Date(departureTime+':00.000Z')
+        },
+            {
+                $set:{capacity}
+            })
+        res.redirect('/')
+
+    } catch (e) {
+        log.error(e.stack)
+        res.status(400).send(e.message)
+    }
+})
 //--------------------------------
 router.post('/flight', async (req, res) => {
     try {
+        log.debug('POST /flight, data: ',req.body)
         if (typeof parseInt(req.body.price) !== "number" || typeof parseInt(req.body.capacity) !== "number" || !(/\d\d\d\d-\d\d-\d\d/.test(req.body.departureDate))){
-            res.status(400).send('Bad Input')
+            throw new Error('Bad Input')
         }
+        req.body.price = req.body.price === 0 ? 'N/A' : req.body.price
+        req.body.capacity = req.body.capacity === 0 ? 'N/A' : req.body.capacity
         await flightsServices.save(req.body)
         res.status(201).send('OK')
     } catch (e) {
