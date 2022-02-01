@@ -30,6 +30,21 @@ module.exports = {
     },
     convertDate(date){
         return momentt(`${data.departureDate} ${data['landing time']} +0000`, "YYYY-MM-DD hh:mmA Z").toDate()
-    }
+    },
+    start(date){
+        date.setUTCHours(0)
+        date.setUTCMinutes(0)
+        date.setUTCSeconds(0)
+        return date
+    },
+    end(date){
+        date.setUTCHours(23)
+        date.setUTCMinutes(59)
+        date.setUTCSeconds(59)
+        return date
+    },
+    async delete(filter) {
+        return await collection.deleteMany(filter)
+    },
 
 }

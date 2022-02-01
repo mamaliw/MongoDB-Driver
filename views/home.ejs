@@ -213,8 +213,12 @@
             Filter
         </button>
         <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                data-bs-target="#exampleModal1" style="font-size: 1.1rem; ma">
+                data-bs-target="#exampleModal1" style="font-size: 1.1rem">
             Bulk Edit
+        </button>
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                data-bs-target="#exampleModal2" style="font-size: 1.1rem">
+            Bulk Remove
         </button>
         <div class="input-group mb-3 " style="width: 12%; margin: 0 auto; box-shadow: none; height: 10px">
             <button class="btn btn-outline-secondary" name="mode" value="prev" type="submit" style="box-shadow: none">
@@ -352,7 +356,7 @@
           >Departure time</span
           >
                         <input
-                                type="datetime-local"
+                                type="date"
                                 name="departureTime"
                                 class="form-control"
                                 id="basic-url"
@@ -367,6 +371,51 @@
                     </div>
 
                     <button type="submit">Submit</button>
+
+                    <div class="modal-footer">
+                        <button type="button" style="font-size: 1.2rem" class="btn btn-secondary"
+                                data-bs-dismiss="modal">Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!--    Modal Remove-->
+    <form action="/bulk-remove/" method="get" class="row row-cols-lg-auto g-3 align-items-center">
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+             aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 600px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Bulk Remove</h5>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Company</span>
+                        <input type="text" name="company" class="form-control" placeholder="" aria-label="Username"
+                               aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+          <span
+                  class="input-group-text"
+                  id="basic-addon3"
+                  style="font-size: 1.5rem"
+          >Departure time</span
+          >
+                        <input
+                                type="date"
+                                name="departureTime"
+                                class="form-control"
+                                id="basic-url"
+                                aria-describedby="basic-addon3"
+                                style="font-size: 1.5rem"
+                        />
+                    </div>
+
+                    <button type="submit" class="btn btn-danger">Remove</button>
 
                     <div class="modal-footer">
                         <button type="button" style="font-size: 1.2rem" class="btn btn-secondary"

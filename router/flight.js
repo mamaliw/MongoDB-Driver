@@ -108,7 +108,7 @@ router.get('/bulk', async (req, res) => {
             company,
             origin,
             destination,
-            departureDate: new Date(departureTime+':00.000Z')
+            departureDate: {$lte:flightsServices.start(new Date(departureTime)),$gte:flightsServices.end(new Date(departureTime))}
         },
             {
                 $set:{capacity}
